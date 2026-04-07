@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+//bài 1
+// let num = [5,2,8,6,7,11,12,55,99,3]
+// for (i=0;i<num.length;i++) {
+//     if (num[i] > 10) {
+//         document.write("những số lớn hơn 10 là " + num[i] + "<br>")
+//     }
+// }
+    // bài 2
+    let num = [5,2,8,6,7,11,12,55,99,3]
+    let index
+    let max = num[0]
+    let i
+    for ( i=1;i<num.length;i++) {
+        if (num[i] > max) {
+            max = num[i]
+            index = i
+        }
+    } document.write(max + "là số lơn nhất" + index)
+
+    // //bài 3
+    // let num = [5,2,8,6,7,11,12,55,99,3]
+    // let index = 0
+    // let max = num[0]
+    // let i
+    // let total = 0
+    // let average
+    // for (i=1; i<num.length; i++) {
+    //     if (num[i] > max) {
+    //         max = num[i]
+    //         index = i
+    //     }
+    //     total = total + num[i]
+    //     average = total / num.length
+    // } document.write(max + " là số lớn nhất " + index + "<br>")
+    //   document.write(" trung bình là " + average)
+
+    // bài 4
+    // let length = prompt('nhap do dai mang')
+    // let array = []
+    // for (let i=0; i<length; i++) {
+    //     array[i] = prompt('nhap phan tu')
+    // } document.write('array = ['+array + "]<br>")
+    // let  first= 0
+    // let last = array.length - 1
+    // while (first<last) {
+    //     b = array[first]
+    //     array[first] = array[last]
+    //     array[last] = b
+    //     first ++
+    //     last --
+    // }
+    // document.write("Đảo ngược " + array)
+
+    // // bài 5
+    // let str = prompt("nhập 1 chuỗi")
+    // let array=[]
+    // // let count = 0
+    // for (i=0;i<str.length;i++) {
+    //     array[i] = str[i] }
+    // console.log(array)
+    // } console.log(array)
+    // for (i=0; i<array.length;i++) {
+    //     if (array[i]=="-" && (array[i+1]/array[i+1])==1) {
+    //         count ++
+    //     }
+    //
+    // } document.write("số lượng số âm trong phần tử là " + count)
+
+    // bài 6
+    // let str = prompt('nhap chuoi')
+    // let V = prompt('nhap so nguyen')
+    // C1:
+    // let arrayStr =str.split(",");
+// let count = 0
+// console.log(arrayStr)
+// for (i=0;i<arrayStr.length;i++)
+// {
+//     if (V==arrayStr[i])
+//         {count ++}
+//     } if  (count >0) {  document.write("V is in the array")
+//
+// } else  { document.write("V is not in the array")}
+    // C2:
+// let arr = []
+ // for (i=0; i<str;i++) {
+// arr[i] = prompt ('nhap so')
+// document.write (arr)
+// let count = 0
+// for (i=0;i<arr.length;i++)
+// {
+//     if (V==arr.length[i])
+//         {count ++}
+//     } if  (count >0) {  document.write("V is in the array")
+//
+// } else  { document.write("V is not in the array")}
+
+// //     bài 7
+//     let num = prompt('nhap do dai mang')
+//     let V = prompt('nhap so nguyen')
+//
+//     let array = []
+//     for (i=0;i<num;i++) {
+//     array[i] = prompt('nhap so')
+// }
+// document.write(array[i])
+// for (let i = 0; i < num; i++) {
+//     array[i] = prompt(' nhap phan tu  [ ' + array + ' ] ')
+//     {
+//         for (j = i; j < num; j++) {
+//             array[j] = array[j + 1]
+//         }
+//     }
+//
+// }
+// document.write(array + "<br>")
+// for (i=0; i<num;i++){
+// array[i] = array [i+1]
+    // C2:"dùng hàm có sẵn"
+    // let arrayStr = str.split(",")
+    // for (i=0; i<arrayStr.length;i++) {
+    //     if (arrayStr[i]==V) {
+    //         arrayStr.splice(i,1)
+    //         arrayStr.push(0)
+    //     }
+    // }
+    // document.write(arrayStr)
+
+    // bài 8
+// let num = prompt('nhap do dai mang')
+// let array = []
+// for (i=0;i<num;i++) {
+//     array[i] = prompt('nhap so')
+//     } document.write('array = ['+array + "]<br>")
+// for (i=0;i<array.length;i++) {
+//     for (j = i + 1; j < array.length; j++) {
+//         if (array[j]>array[i]) {
+//         let a = array[i]
+//         array[i] = array[j]
+//         array[j] = a
+//     }
+// } } document.write(array)
+
+//     // bài 9
+// let num1 = prompt('nhap do dai mang a')
+// let arr1 =[]
+// let num2 = prompt('nhap do dai mang b')
+// let arr2 = []
+// let arr3 = []
+// let i
+// let j;
+//     for (i=0;i<num1;i++) {
+//         arr1[i] = prompt('nhap so a')
+//     } document.write('arr1 = ['+arr1 + "]<br>")
+//     for (j=0; j<num2;j++) {
+//         arr2[j] =prompt('nhap so b')
+//     } document.write('arr2 = ['+arr2 + "]<br>")
+//     for (k=0;k<arr1.length;k++) {
+//         arr3.push(arr1[k])
+//     } for (l=0;l<arr2.length;l++) {
+//         arr3.push(arr2[l])
+// } document.write(arr3)
+
+
+</script>
+
+</body>
+</html>

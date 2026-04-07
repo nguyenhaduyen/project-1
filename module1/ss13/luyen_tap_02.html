@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // // bài 1
+    // let a = [
+    //     [1, 2, 1, 24],
+    //     [8, 11, 9, 4],
+    //     [7, 0, 7, 27],
+    //     [7, 4, 28, 14],
+    //     [3, 10, 26, 7]
+    // ];
+    //
+    // for (let row = 0; row < a.length; row++) {
+    //     for (let col = 0; col < a[row].length; col++) {
+    //         document.write( a[row] [col] + "")
+    //     } document.write("<br>")
+    // }
+
+    // // bài 2
+    // let a = ['c', 's', 'c', '2', '6', '1']
+    // let first = 0
+    // let last = a.length - 1
+    // while (first<last) {
+    //     b= a[first]
+    //     a[first] = a[last]
+    //     a[last] = b
+    //     first ++
+    //     last--
+    // } document.write(a.join(""))
+
+// // bài 3
+//     let num = prompt('nhap luong pt')
+//     let arr = []
+//     let count = 0
+//     for (i=0; i < num; i++) {
+//         arr[i] = prompt('nhap so phan tu ' + i)
+//     } document.write(arr + "<br>")
+//     for (let i = 0 ; i<num;i++){
+//     if (arr[i]/arr[i]==1) {
+//         count ++}
+//     } document.write("so luong ki tu" + count)
+// bài 4
+    let str = prompt('nhap chuoi')
+    let count = 0
+    let array = []
+    let space = '&nbsp&nbsp'
+    for (i=0;i<str.length;i++) {
+        array[i] = str[i] }
+    for (i=0;i<array.length;i++) {
+        if (array[i]/1!=array[i] || array[i] === '&nbsp&nbsp') {
+            count ++
+            space ++
+        }
+    } document.write(count)
+
+    // bài 5
+    // let str1 = prompt("Nhập vào chuỗi thứ nhất");
+    // document.write("Chuỗi thứ nhất là: " + str1);
+    // let str2 = prompt("Nhập vào chuỗi thứ hai");
+    // document.write("<br>Chuỗi thứ hai là: " + str2);
+    // result = "";
+    // if(str1.length != str2.length) {
+    //     document.write("<br>Hai chuỗi bạn vừa nhập không giống nhau.")
+    // } else {
+    //     for (let i = 0; i < str1.length; i++) {
+    //         if(str1[i] != str2[i]) {
+    //             result = "<br>Hai chuỗi bạn vừa nhập không giống nhau.";
+    //         } else {
+    //             result = "<br>Hai chuỗi bạn vừa nhập giống nhau.";
+    //         }
+    //     }
+    //     document.write(result);
+    // }
+    // bài 6
+    // let n = parseInt(prompt("Nhập độ dài của mảng"));
+    // let arr = new Array(n);
+    // for (let i = 0; i < n; i++) {
+    //     arr[i] = prompt("Nhập phần tử thứ: " + i + "của mảng");
+    // }
+    // document.write("Mảng bạn nhập là: [" + arr + "]");
+    // for (let i = 0; i < n; i++) {
+    //     if (arr[i] == "-") {
+    //         arr[i] = "_";
+    //     }
+    // }
+    // document.write("<br>Mảng của bạn sau khi thay đổi là: [" + arr + "]");
+
+
+
+</script>
+
+</body>
+</html>
