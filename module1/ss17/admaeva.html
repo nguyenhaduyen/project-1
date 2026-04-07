@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Apple {
+        constructor(Weight) {
+            this.Weight = Weight
+        }
+        getWeight () {
+            return this.Weight
+        }
+        setWeight (Weight2) {
+            this.Weight = Weight2
+        }
+        isEmpty () {
+            if (this.Weight <=0) {
+                return true
+            } else {
+                return false
+            }
+        }
+        descreaseApple(){
+            if (this.isEmpty()) {
+                alert('het tao')
+            } else {
+                this.Weight --
+            }
+        }
+    }
+    class Human {
+        constructor(name, gender, Weight) {
+            this.name = name
+            this.gender = gender
+            this.Weight = Weight
+        }
+        getName(){
+            return this.name
+        }
+        setName(name1) {
+            this.name = name1
+        }
+        getGender () {
+            return this.gender
+        }
+        isMale() {
+            if (this.gender = 1) {
+                return true
+            } else {
+                return false
+            }
+        }
+        getWeight () {
+            return this.Weight
+        }
+        setWeight (Weight1) {
+            this.Weight = Weight1
+        }
+        talk () {
+            console.log("helu")
+        }
+        eat (apple) {
+            if (apple.getWeight() >0) {
+                this.Weight ++
+                apple.descreaseApple()
+            } else {
+                alert('tao da het')
+            }
+        }
+        check (apple) {
+            return apple.isEmpty ()
+        }
+    }
+    let apple = new Apple
+    apple.setWeight(10)
+    let adam = new Human ('Adam',1,55)
+    let eva = new Human ("Eva", 2 ,45)
+    while (apple.getWeight() >0) {
+        document.write(adam.getName() + " an tao" + "<br>")
+        adam.eat(apple)
+        document.write(eva.getName() + " an tao" + "<br>")
+        eva.eat(apple)
+        document.write("can nang cua " + adam.getName()  +  " la" + adam.getWeight() + "<br>")
+        document.write("can nang cua " + eva.getName()  +  " la" + eva.getWeight() + "<br>")
+        document.write("<br>")
+
+
+    }
+</script>
+
+</body>
+</html>
