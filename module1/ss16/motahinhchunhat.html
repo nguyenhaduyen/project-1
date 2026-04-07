@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="demoCanvas" width="500" height="600"></canvas>
+<script>
+    var canvas = document.getElementById("demoCanvas");
+    if (canvas.getContext) {
+        var ctx = canvas.getContext('2d');
+        ctx.fillStyle = '#fa2a2a'
+        ctx.fillRect(40,10,160,140)
+    }
+    class Rectangle {
+        constructor(length, width) {
+            this.length = length
+            this.width = width
+        }
+
+        getlength() {
+            return this.length
+        }
+
+        getwidth() {
+            return this.width
+        }
+
+        getarea() {
+            let s = this.length * this.width
+            return s
+        }
+
+        getperimeter() {
+            let P = (this.width + this.length) * 2
+            return P
+        }
+    }
+    // c1
+    // } let rectangle = new Rectangle(5,3)
+    // let length = rectangle.getlength()
+    // let width = rectangle.getwidth()
+    // let area = rectangle.getarea()
+    // let perimeter = rectangle.getperimeter()
+    // alert("length : " + length + "width : " + width +  "; area: " + area + "; perimeter " + perimeter)
+    // c2
+    let length = +prompt('nhap chieu dai')
+    let width = +prompt('nhap chieu rong')
+    let rectangle = new Rectangle(length,width)
+    let area = rectangle.getarea()
+    let perimeter = rectangle.getperimeter()
+    alert("length : " + length + "width : " + width +  "; area: " + area + "; perimeter " + perimeter)
+</script>
+
+</body>
+</html>

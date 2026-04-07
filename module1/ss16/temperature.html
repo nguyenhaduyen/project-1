@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(Celcius) {
+            this.Celcius = Celcius
+        }
+
+        getCelcius() {
+            return Celcius
+        }
+        getresultF() {
+            let F = 1.8 * this.Celcius
+            return F
+        }
+        getresultKenvin() {
+            let Kenvin = this.Celcius + 273
+            return Kenvin
+        }
+    }
+        let temperature = new Temperature(25)
+    let resultF = temperature.getresultF()
+    let resultKenvin = temperature.getresultKenvin()
+    alert ("chuyen tu do C sang do F : " + resultF )
+    alert ("chuyen tu do C sang do Kenvin : " + resultKenvin)
+</script>
+</body>
+</html>
